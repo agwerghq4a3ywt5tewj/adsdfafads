@@ -1,0 +1,135 @@
+@@ .. @@
+ # You can add more configuration options here
++
++# Broadcasting System Configuration
++broadcasts:
++  # Testament completion broadcasts
++  testament_completion:
++    enabled: true
++    include_coordinates: true
++    play_sound: true
++    message: "§6§l{player} §r§6has completed the Testament of the {god}!"
++  
++  # Divine Convergence broadcasts
++  convergence:
++    enabled: true
++    play_sound: true
++    messages:
++      - "§5§l★═══════════════════════════════════════════════════════════════★"
++      - "§5§l              {player} HAS ACHIEVED DIVINE CONVERGENCE!"
++      - "§5§l★═══════════════════════════════════════════════════════════════★"
++      - "§7{player} has mastered all twelve gods and become the"
++      - "§5§lMaster of All Divinity§r§7! They have transcended mortality itself!"
++      - "§5§l★═══════════════════════════════════════════════════════════════★"
++  
++  # Altar generation broadcasts
++  altar_natural_generation:
++    enabled: true
++    include_coordinates: true
++    message: "§6§lA {god} altar has manifested naturally in the world!"
++  
++  altar_manual_generation:
++    enabled: true
++    include_coordinates: true
++    message: "§6§lAn altar for the {god} has been constructed!"
++  
++  # Fragment discovery broadcasts
++  fragment_discovery:
++    enabled: true
++    message: "§6§l{player} §r§6has discovered a fragment of the {god}!"
++  
++  # Bounty system broadcasts
++  bounty_placed:
++    enabled: true
++    message: "§6§l💰 BOUNTY ALERT! 💰 A bounty of {amount} {currency} has been placed on {target}!"
++  
++  bounty_claimed:
++    enabled: true
++    message: "§6§l💰 BOUNTY CLAIMED! 💰 {killer} has claimed the bounty on {victim} for {amount} {currency}!"
++  
++  # Boss event broadcasts
++  boss_spawn:
++    enabled: true
++    include_coordinates: true
++    play_sound: true
++    message: "§c§l⚔ {boss} has awakened! ⚔"
++  
++  boss_defeat:
++    enabled: true
++    play_sound: true
++    message: "§a§l⚔ {boss} has been defeated by {killer}! ⚔"
++
++# PvP and Bounty System Configuration
++pvp:
++  bounty_system:
++    enabled: true
++    max_bounty_amount: 64
++    bounty_expiration_days: 7
++    allowed_currencies:
++      - "DIAMOND"
++      - "EMERALD"
++      - "GOLD_INGOT"
++      - "IRON_INGOT"
++    
++    # Bounty restrictions
++    min_bounty_amount: 1
++    max_bounties_per_player: 5
++    cooldown_between_bounties_minutes: 30
++    
++    # Anti-abuse measures
++    prevent_self_bounty: true
++    prevent_friend_bounty: false
++    require_pvp_enabled: true
++
++# Enhanced Boss System Configuration
++boss_system:
++  enabled: true
++  
++  # Dynamic scaling settings
++  scaling:
++    enabled: true
++    difficulty_scaling: true
++    player_count_scaling: true
++    power_level_scaling: true
++    
++    # Scaling multipliers
++    difficulty_multipliers:
++      peaceful: 0.5
++      easy: 0.8
++      normal: 1.0
++      hard: 1.3
++    
++    boss_type_multipliers:
++      ender_dragon: 1.5
++      wither: 1.3
++      elder_guardian: 1.2
++      default: 1.2
++  
++  # Enhanced Ender Dragon
++  ender_dragon:
++    enabled: true
++    phase_system: true
++    additional_crystals: 8
++    summon_minions: true
++    enhanced_abilities: true
++    
++    # Phase settings
++    phases:
++      crystal_phase:
++        crystal_regeneration: true
++        beam_attacks: true
++      aerial_phase:
++        fireball_barrage: true
++        wind_attacks: true
++      ground_phase:
++        tail_sweep: true
++        enhanced_breath: true
++      enraged_phase:
++        all_abilities: true
++        fear_roar: true
++    
++    # Rewards
++    rewards:
++      enhanced_elytra: true
++      dragon_scales: true
++      bonus_xp_multiplier: 2.0
