@@ -3,7 +3,7 @@
 ## 🎮 Overview
 Epic Minecraft plugin where players collect 7 rare fragments from each of 12 fallen gods to unlock divine powers and progress towards ultimate rewards. The ultimate goal is achieving **Divine Convergence** - mastering all gods to become the supreme deity.
 
-This plugin currently features a comprehensive testament system with divine items, fragment collection, player progression, and a lives system. Future updates will include a dynamic PvP bounty system, difficulty-scaled boss battles, an enhanced Ender Dragon guardian system, and server-wide coordinate broadcasting. Built for Paper 1.21.5+ with Java 21.
+This plugin currently features a comprehensive testament system with divine items, fragment collection, player progression, and a lives system. Future updates will include a dynamic PvP bounty system, difficulty-scaled boss battles, an enhanced Ender Dragon guardian system, and server-wide coordinate broadcasting. Built for Paper 1.21.8 with Java 21.
 
 ## ⚡ Quick Start
 
