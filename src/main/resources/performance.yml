@@ -1,0 +1,39 @@
+# Performance optimization configuration
+
+performance:
+  caching:
+    enabled: true
+    config_cache_duration: 300000  # 5 minutes in milliseconds
+    player_data_cache_size: 1000
+    fragment_cache_duration: 60000  # 1 minute
+    
+  async_operations:
+    enabled: true
+    max_concurrent_tasks: 10
+    task_timeout_seconds: 30
+    batch_processing: true
+    
+  optimization:
+    batch_save_interval: 300  # 5 minutes in seconds
+    cleanup_interval: 600     # 10 minutes in seconds
+    max_tracked_operations: 1000
+    memory_cleanup_threshold: 0.8
+    
+  monitoring:
+    enabled: false
+    log_interval: 300  # 5 minutes in seconds
+    track_slow_operations: true
+    slow_operation_threshold_ms: 100
+    performance_alerts: true
+    
+  database:
+    connection_pool_size: 10
+    connection_timeout: 30
+    query_timeout: 15
+    batch_size: 100
+    
+  effects:
+    particle_optimization: true
+    sound_optimization: true
+    effect_batching: true
+    render_distance_optimization: true

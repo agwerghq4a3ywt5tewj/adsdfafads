@@ -1,0 +1,52 @@
+# Altar system configuration
+
+altars:
+  natural_generation:
+    enabled: true
+    base_spawn_chance: 0.001
+    min_distance: 500
+    max_per_chunk: 1
+    
+    # Biome-specific spawn rate multipliers
+    biome_multipliers:
+      swamp: 2.0
+      dark_forest: 2.0
+      deep_dark: 1.5
+      desert: 2.0
+      badlands: 1.5
+      ocean: 1.8
+      forest: 2.0
+      jungle: 1.5
+      mountains: 1.8
+      the_end: 0.5
+      dripstone_caves: 1.2
+      lush_caves: 1.2
+      nether: 0.8
+      sculk: 1.0
+    
+    # God rarity weights (higher = more common)
+    god_weights:
+      fallen: 3
+      banishment: 3
+      abyssal: 3
+      sylvan: 3
+      tempest: 3
+      veil: 2
+      forge: 1
+      void: 1
+      time: 1
+      blood: 1
+      crystal: 1
+      shadow: 1
+  
+  effects:
+    enhanced_completion: true
+    permanent_marking: true
+    god_specific_sounds: true
+    lightning_strikes: true
+    beacon_beams: true
+    
+  validation:
+    strict_structure: true
+    allow_variations: false
+    show_requirements: true

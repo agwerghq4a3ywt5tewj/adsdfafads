@@ -1,0 +1,86 @@
+# Visual and audio effects configuration
+
+effects:
+  enabled: true
+  particle_density: 1.0
+  sound_effects: true
+  god_auras: true
+  ability_effects: true
+  testament_completion_effects: true
+  convergence_effects: true
+  
+  altar_effects:
+    enhanced_particles: true
+    god_specific_themes: true
+    lightning_sequences: true
+    beacon_beams: true
+    permanent_marking: true
+    sound_sequences: true
+    
+    # God-specific effect settings
+    fallen:
+      soul_spiral_duration: 120
+      dark_energy_bursts: true
+      ash_particles: true
+      
+    banishment:
+      fire_tornado_duration: 100
+      lava_eruptions: true
+      flame_intensity: 1.5
+      
+    abyssal:
+      water_vortex_duration: 140
+      bubble_effects: true
+      ocean_sounds: true
+      
+    sylvan:
+      growth_animation_duration: 160
+      flower_blooms: true
+      nature_sounds: true
+      
+    tempest:
+      storm_duration: 120
+      lightning_frequency: 15
+      wind_effects: true
+      
+    veil:
+      reality_distortion_duration: 180
+      portal_tears: true
+      void_effects: true
+      
+    forge:
+      molten_sparks_duration: 100
+      anvil_strikes: true
+      creation_energy: true
+      
+    void:
+      void_collapse_duration: 140
+      phase_rifts: true
+      emptiness_effects: true
+      
+    time:
+      temporal_spiral_duration: 200
+      chronos_pulses: true
+      time_distortion: true
+      
+    blood:
+      combat_energy_duration: 80
+      berserker_effects: true
+      battle_sounds: true
+      
+    crystal:
+      resonance_duration: 160
+      harmonic_waves: true
+      crystal_formations: true
+      
+    shadow:
+      shadow_tendrils_duration: 120
+      darkness_bursts: true
+      stealth_effects: true
+  
+  performance:
+    max_particles_per_effect: 100
+    effect_cooldown_ms: 1000
+    global_cooldown_ms: 5000
+    particle_render_distance: 32
+    sound_render_distance: 16

@@ -1,0 +1,83 @@
+# Divine Forge System Configuration
+
+forge:
+  enabled: true
+  
+  # Upgrade system settings
+  upgrades:
+    enabled: true
+    success_chances:
+      enhanced: 0.9    # 90% success rate
+      legendary: 0.7   # 70% success rate
+      mythic: 0.5      # 50% success rate
+      transcendent: 0.3 # 30% success rate
+    
+    # Material drop rates
+    material_drops:
+      divine_essence:
+        wither_skeleton: 0.1
+        blaze: 0.08
+        amethyst_cluster: 0.12
+      cosmic_fragment:
+        ender_dragon: 1.0  # Guaranteed
+        elder_guardian: 0.7
+        ancient_debris: 0.15
+      reality_shard:
+        wither: 1.0  # Guaranteed 2x
+        warden: 0.8
+        sculk_catalyst: 0.2
+      transcendent_core:
+        ender_dragon: 1.0  # Guaranteed
+        end_portal_frame: 0.01  # Very rare
+      fusion_catalyst:
+        enderman: 0.05
+        raid_completion: 0.3
+  
+  # Combination system settings
+  combinations:
+    enabled: true
+    require_fusion_catalyst: true
+    success_rate: 1.0  # 100% success for combinations
+    
+    # Combination bonuses
+    bonuses:
+      enchantment_boost: 2  # +2 levels to all enchantments
+      cooldown_reduction: 0.2  # 20% cooldown reduction
+      effect_amplification: 1.5  # 50% stronger effects
+  
+  # Legendary variant settings
+  legendary_variants:
+    enabled: true
+    spawn_chances:
+      fallen_eternal_heart: 0.05  # 5%
+      banishment_inferno_scepter: 0.04  # 4%
+      # Add more variants as they're implemented
+    
+    # Legendary bonuses
+    bonuses:
+      enchantment_boost: 3  # +3 levels
+      cooldown_reduction: 0.3  # 30% reduction
+      unique_abilities: true
+  
+  # Forge locations (for future expansion)
+  forge_locations:
+    enabled: false  # Not implemented yet
+    require_special_anvil: false
+    custom_forge_blocks: []
+  
+  # Rewards and progression
+  rewards:
+    # Grant materials for achievements
+    testament_completion:
+      divine_essence: 2
+    convergence_achievement:
+      transcendent_core: 1
+      cosmic_fragment: 5
+    raid_completion:
+      fusion_catalyst_chance: 0.3
+    
+  # Performance settings
+  performance:
+    cache_upgrade_calculations: true
+    async_material_generation: true
+    batch_forge_operations: true
